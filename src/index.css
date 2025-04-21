@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient style for active nav link */
+.menu li .active-link {
+  background: linear-gradient(to right, #3b82f6, #ec4899, #8b5cf6); /* blue → pink → purple */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
