@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-[#0f1117] text-white px-6 py-20 md:px-16 font-sans"
+      className="bg-[#0f1117] text-white px-6 py-36 md:px-16 font-sans"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Side */}
@@ -83,7 +83,7 @@ const Contact = () => {
 
            
         <div className="p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 inline-block shadow-lg shadow-pink-500/30">
-  <button type='submit' className="bg-[#0f1117] text-white px-4 py-2 rounded-full hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 hover:text-white transition shadow-inner">
+  <button type='submit' className="bg-[#0f1117] text-white px-6 py-2 rounded-full hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 hover:text-white transition shadow-inner">
     Send
   </button>
 </div>

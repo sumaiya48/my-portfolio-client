@@ -8,7 +8,7 @@ const Project = ({ title, tech, liveLink, githubLink, img }) => {
         <img
           src={img}
           alt={title}
-          className="w-full h-40 object-cover mb-4 rounded"
+          className="w-full h-50 object-cover mb-4 rounded"
         />
       )}
 

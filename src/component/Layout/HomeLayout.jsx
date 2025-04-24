@@ -13,7 +13,7 @@ import Contact from '../Home/Contact/Contact';
 
 const HomeLayout = () => {
     return (
-        <div className=''>
+        <div className='bg-[#0f1117]'>
             <Navbar></Navbar>
             <Hero></Hero>
             <Services></Services>

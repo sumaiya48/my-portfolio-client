@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const Hero = () => {
   return (
     <div id='hero' className=' bg-[#0f1117]'>
-        <div className="w-11/12 mx-auto md:min-h-screen flex items-center px-6 py-10 overflow-hidden">
+        <div className="w-11/12 mx-auto md:h-[600px] flex items-center px-6 my-16 overflow-hidden">
       
      
       <div className="max-w-3xl text-left">
@@ -15,8 +15,9 @@ const Hero = () => {
         <p className="text-gray-300 text-lg md:text-xl mb-8">
           I am <span className="text-blue-400 font-medium">Sumaiya Akter</span> – <span className="text-blue-400">web-developer</span> with a passion for creating beautiful and responsive websites.
         </p>
-
-        <Link
+<div className="flex flex-col md:flex-row gap-5">
+  
+<Link
   to="projects"
   smooth={true}
   duration={500}
@@ -30,6 +31,17 @@ const Hero = () => {
     </div>
   </div>
 </Link>
+<a
+  href="/resume.pdf"
+  download
+  target="_blank"
+   rel="noopener noreferrer"
+  className="bg-gradient-to-r from-indigo-400 to-purple-500 w-2/3 md:w-48 text-white py-2 px-4 rounded-full hover:from-indigo-600 hover:to-purple-600"
+>
+  Download Resume
+</a>
+</div>
+
 
 
         
@@ -49,7 +61,7 @@ const Hero = () => {
 
 
     </div>
-    <hr className="bg-gray-500 h-px border-0" />
+    <hr className="bg-gray-500 h-px border-0 " />
 
     </div>
   );

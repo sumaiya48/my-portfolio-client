@@ -3,8 +3,8 @@ import { FaCode, FaPalette, FaServer } from 'react-icons/fa';
 
 const Services = () => {
   return (
-    <div className='bg-[#0f1117]'>
-      <div id="services" className="w-11/12 mx-auto px-6 py-20 md:px-20 text-white font-sans">
+    <div id="services" className='bg-[#0f1117] py-20'>
+      <div  className="w-11/12 mx-auto px-6  md:px-20  text-white font-sans">
         <h2 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text mb-6">
           MY SERVICES
         </h2>
@@ -60,8 +60,8 @@ const Services = () => {
 
         </ul>
       </div>
-
-      <hr className="bg-gray-500 h-px border-0" />
+ <hr className="bg-gray-500 h-px hidden  border-0" />
+    
     </div>
   );
 };
