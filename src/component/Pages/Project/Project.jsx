@@ -2,6 +2,9 @@ import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const Project = ({ title, tech, liveLink, githubLink, img }) => {
+  // Convert comma-separated string to array
+  const techList = tech?.split(',').map(t => t.trim());
+
   return (
     <div className="bg-[#11131c] border border-gray-800 rounded-xl p-6 shadow-md shadow-pink-500/5 transition-transform hover:-translate-y-1 hover:shadow-pink-500/10 duration-300 w-full">
       {img && (
@@ -14,8 +17,19 @@ const Project = ({ title, tech, liveLink, githubLink, img }) => {
 
       <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
 
-      <p className="text-gray-400 text-sm mb-4">{tech}</p>
+      {/* Tech Badges */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {techList?.map((techItem, index) => (
+          <span
+            key={index}
+            className="text-xs bg-gradient-to-r from-purple-400 to-pink-400 text-white px-3 py-1 rounded-full shadow shadow-pink-500/20"
+          >
+            {techItem}
+          </span>
+        ))}
+      </div>
 
+      {/* Links */}
       <div className="flex gap-4">
         <a
           href={liveLink}
